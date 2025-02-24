@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <meta charset="UTF-8">
+
+<head>
+    <title>Teste html imagens 2</title>
+    <style>
+        body {
+            text-align: center;
+            color: brown;
+            background-color: antiquewhite;
+            margin: 10px;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        img {
+            border: 3px solid black;
+            border-radius: 10px;
+            box-shadow: 0px 10px 10px black;
+            margin: 10px 0;
+        }
+        h1 {
+            color: black;
+            background-color: aliceblue;
+            border: 3px solid black;
+            border-radius: 10px;
+            max-width: fit-content ;
+            min-width: fit-content ;
+            margin: 10px 0;
+            padding: 5px 10px;
+        }
+        main {
+            align-content: center;
+            text-align: center;
+            align-items: center;
+            vertical-align: center;
+            justify-content: center;
+            padding: 20px 20px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+<main>
+
+    <!--Imagen 1, disponível no site, coordenadas fornacidas previamente-->
+    <h1>Teste de imagens em html 2</h1>
+    <img src="https://www.w3schools.com/html/workplace.jpg" alt="Imagem de um escritório" usemap="#workmap">
+
+    <h1>Usando o elemento map, é possível criar imagens interativas, pode clicar em algum dos elementos da Imagem</h1>
+
+    <map name="workmap">
+        <area shape="rect" coords="34,44,270,350" href="https://pt.wikipedia.org/wiki/Laptop" alt="Notebook" target="_blank">
+        <area shape="rect" coords="290,172,333,250" href="https://pt.wikipedia.org/wiki/Smartphone" alt="Smartphone" target="_blank">
+        <area shape="circle" coords="337,300,44" href="https://pt.wikipedia.org/wiki/Chávena" alt="Café" target="_blank">
+    </map>
+    <!--Imagen 1, disponível no site, coordenadas fornacidas previamente-->
+    <!--Imagen 2, código feito do zero-->
+    <img src="https://static.vecteezy.com/ti/vetor-gratis/p1/13751858-formas-geometricas-descrevem-o-elemento-de-diagrama-de-colecao-para-educacao-e-negocios-gratis-vetor.jpg" alt="Formas Geométricas" usemap="#shapes">
+
+    <map name="shapes">
+        <area alt="Círculo" coords="223,190,111" shape="circle" onclick="Círculo()"></area>
+        <area alt="Triângulo" coords="560,76,690,293,433,296" shape="poly" onclick="Triângulo()"></area>
+        <area alt="Quadrado" coords="796,78,1024,310" shape="rect" onclick="Quadrado()"></area>
+        <area alt="Octógono" coords="1232,71,1307,110,1350,192,1311,269,1233,310,1155,270,1117,185,1151,107" shape="poly" onclick="Octógono()"></area>
+        <area alt="Estrela gorda" coords="253,382,300,436,372,462,331,526,327,605,255,583,184,605,178,533,132,461,206,438" shape="poly" onclick="EstrelaGorda()"></area>
+        <area alt="Hexágono" coords="635,376,703,495,635,607,503,609,438,492,499,385" shape="poly" onclick="Hexágono()"></area>
+        <area alt="Paralelograma" coords="865,414,1100,413,990,577,749,577" shape="poly" onclick="Paralelograma()"></area>
+        <area alt="Estrela" coords="1268,373,1297,469,1400,462,1312,522,1346,614,1267,551,1192,609,1225,523,1145,462,1240,468" shape="poly" onclick="Estrela()"></area>
+        <area alt="Retângulo" coords="110,734,393,878" shape="rect" onclick="Retângulo()"></area>
+        <area alt="Triângulo retângulo" coords="513,677,742,905,518,902" shape="poly" onclick="Triângulo()"></area>
+        <area alt="Oval" coords="913,711,1028,730,1097,788,1063,846,981,871,882,872,783,843,758,782,806,735" shape="poly" onclick="Oval()"></area>
+        <area alt="Trapézio" coords="1196,714,1333,713,1407,865,1133,867" shape="poly" onclick="Trapézio()"></area>
+
+    </map>
+    <!--Imagen 2, Código feito do zero-->
+    <!--Funções-->
+    <script>
+        function Círculo() {
+            alert("Você clicou no círculo");
+        }
+    </script>
+    <script>
+        function Triângulo() {
+            alert("Você clicou no triângulo");
+        }
+    </script>
+    <script>
+        function Quadrado() {
+            alert("Você clicou no quadrado");
+        }
+    </script>
+    <script>
+        function Octógono() {
+            alert("Você clicou no octógono");
+        }
+    </script>
+    <script>
+        function EstrelaGorda() {
+            alert("Você clicou na estrela gorda");
+        }
+    </script>
+    <script>
+        function Hexágono() {
+            alert("Você clicou no hexágono");
+        }
+    </script>
+    <script>
+        function Paralelograma() {
+            alert("Você clicou no paralelograma");
+        }
+    </script>
+    <script>
+        function Estrela() {
+            alert("Você clicou na estrela");
+        }
+    </script>
+    <script>
+        function Retângulo() {
+            alert("Você clicou no retângulo");
+        }
+    </script>
+    <script>
+        function TriânguloRetângulo() {
+            alert("Você clicou no triângulo retângulo");
+        }
+    </script>
+    <script>
+        function Oval() {
+            alert("Você clicou no oval");
+        }
+    </script>
+    <script>
+        function Trapézio() {
+            alert("Você clicou no trapézio");
+        }
+    </script>
+    <!--Funções-->
+</main>
+</body>
+</html>

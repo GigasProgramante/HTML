@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Study Match, encontre seu parceiro de estudos</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="O Study Match une o conhecimento e o ambiente academico a novas amizades e uma interação divertida entre seus usuários">
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                text-align: center;
+                margin: 0;
+                padding: 0;
+            }
+
+            main {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+                padding: 40px 20px;
+                flex-wrap: wrap;
+            }
+            
+            section {
+                max-width: 30%;
+                min-width: 280px ;
+                background-color: aquamarine;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            }
+            #amizades {
+                order: 0;
+            }
+
+            #segurança {
+                order: -1;
+
+            }
+
+            #wannabe {
+                order: 1;
+            }
+
+            @media (max-width: 800px) 
+                main {
+                flex-direction: column;
+                }
+
+                section {
+                    width: 80%;
+                }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Study Match</h1>
+            <p>Desenvolva seu conhecimento ajudando outros universitários e trocando conhecimento,com um excelente sistema de avaliação e ótimas funcionalidades o Study Match foi feito para você que quer um novo parceiro de estudos!</p>
+
+        </header>
+        <main>
+           
+            <section id="amizades">
+                <h2><strong> Faça novas amizades! </strong></h2>
+                <p>Aqui os alunos trocam conhecimento e podem se ajudar mutuamente em seus trabalhos e tarefas acadêmicas</p>
+                <p>Nosso site tem como objetivo conseguir unir os mais diversos tipos de alunos e universitários de todos os cursos e regiões do país</p>
+            </section>
+           
+            <section id="seguranca">
+                <h2><strong> Ambiente seguro </strong> </h2>            
+                <p>Com um ambiente de conversa totalmente seguro e monitorado, nosso sistema de avaliação ajuda no controle de qualidade do site, assim mostrando aqueles alunos que realmente ajudam os outros e aqueles que apenas querem se aproveitar de nossos usuários</p>
+            </section>
+            
+            <section id="wannabe">
+                <h2><strong> What do you wanna be? </strong> </h2>
+                <p>Temos também a <strong><em> do you wanna be?</em></strong> Ferramenta que tem como objetivo mostrar os cursos de graduação disponiveis perto de sua localização e como será possivel seu ingresso nas instituições de ensino superior </p>             
+            </section>
+        </main>
+        <footer></footer>
+        
+    </body>
+
+</html>
